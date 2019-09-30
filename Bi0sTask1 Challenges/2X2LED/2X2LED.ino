@@ -1,20 +1,30 @@
-int inpin = 2;
-int outpin = 8;
+int LED1=1;
+int LED2=2;
+int LED3=3;
+int LED4=4;
+
+
 void setup()
 {
-  pinMode(2,INPUT);
-  pinMode(8,OUTPUT);
-
+  pinMode(LED1,OUTPUT);
+  pinMode(LED2,OUTPUT);
+  pinMode(LED3,OUTPUT);
+  pinMode(LED4,OUTPUT);
+  
 }
 
 void loop()
 {
-    if (digitalRead(inpin)==1)
-    {
-      digitalWrite(outpin , HIGH);
-    }
-    else
-    {
-      digitalWrite(outpin , LOW);
-    }
+  digitalWrite(LED1,HIGH);
+  digitalWrite(LED2,HIGH);
+  digitalWrite(LED3,HIGH);
+  digitalWrite(LED4,HIGH);
+  delay(1000);
+  
+  digitalWrite(LED1,LOW);
+  digitalWrite(LED2,LOW);
+  digitalWrite(LED3,LOW);
+  digitalWrite(LED4,LOW);
+  delay(1000);
+  
 }
